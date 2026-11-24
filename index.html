@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Expediente Owner-Operator — Tu autoridad propia, en español | Consultoría Omar Cruz</title>
+<meta name="description" content="Armamos tu expediente completo de owner-operator: USDOT, autoridad MC, BOC-3, UCR, IFTA e IRP, paso a paso y en español. Costos oficiales separados del precio del servicio. Los servicios en inglés cobran $599–$1,997 por este mismo papeleo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800;900&family=IBM+Plex+Mono:wght@400;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --verde:#0a4d2e; --verde-osc:#063a22; --verde-claro:#0f6b41;
+  --crema:#f7f2e4; --papel:#fffdf6; --amarillo:#ffcf3f; --amarillo-osc:#e0aa00;
+  --tinta:#14231b; --gris:#5a6a60; --linea:#d9d2bd; --rojo:#b3352b;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--crema);color:var(--tinta);line-height:1.6}
+h1,h2,h3,.sign{font-family:'Archivo',sans-serif}
+.mono{font-family:'IBM Plex Mono',monospace}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.topbar{background:var(--verde-osc);color:#fff;padding:14px 0;border-bottom:4px solid var(--amarillo)}
+.topbar .wrap{display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+.medallon{width:62px;height:62px;flex:0 0 62px;border-radius:50%;background:radial-gradient(circle at 32% 30%,#ffe98a,var(--amarillo) 55%,var(--amarillo-osc));display:flex;align-items:center;justify-content:center;border:3px solid #fff3c4;box-shadow:0 2px 10px rgba(0,0,0,.35)}
+.medallon span{font-family:'Archivo';font-weight:900;font-size:24px;color:var(--verde-osc);letter-spacing:.5px}
+.topbar .marca{font-family:'Archivo';font-weight:800;font-size:19px;line-height:1.2;letter-spacing:.4px}
+.topbar .marca small{display:block;font-family:'IBM Plex Mono';font-weight:400;font-size:11.5px;color:var(--amarillo);letter-spacing:2px}
+.topbar .tel{margin-left:auto;text-align:right}
+.topbar .tel a{color:#fff;text-decoration:none;font-family:'Archivo';font-weight:800;font-size:20px}
+.topbar .tel small{display:block;color:#bfe3cf;font-size:12px}
+.hero{background:linear-gradient(160deg,var(--verde) 0%,var(--verde-osc) 78%);color:#fff;padding:56px 0 64px;position:relative;overflow:hidden}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:10px;background:repeating-linear-gradient(90deg,var(--amarillo) 0 46px,transparent 46px 78px)}
+.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:38px;align-items:center}
+.exit-tag{display:inline-flex;align-items:center;gap:10px;background:#fff;color:var(--verde-osc);border-radius:10px;padding:7px 14px;font-family:'Archivo';font-weight:800;font-size:13px;letter-spacing:1.6px}
+.exit-tag b{background:var(--verde);color:#fff;border-radius:6px;padding:2px 9px;font-size:13px}
+.hero h1{font-size:clamp(34px,5.2vw,58px);font-weight:900;line-height:1.04;margin:20px 0 14px;text-transform:uppercase}
+.hero h1 .gold{color:var(--amarillo)}
+.hero p.lead{font-size:19px;color:#e8f2ea;max-width:56ch}
+.hero .foto{border-radius:16px;overflow:hidden;border:4px solid rgba(255,255,255,.25);box-shadow:0 18px 44px rgba(0,0,0,.4)}
+.hero .foto img{width:100%;height:100%;object-fit:cover;display:block}
+.hero .foto figcaption{background:#fff;color:var(--verde-osc);font-size:12.5px;padding:8px 12px;font-family:'IBM Plex Mono'}
+.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}
+.chip{background:rgba(255,255,255,.1);border:1.5px solid rgba(255,255,255,.4);color:#fff;border-radius:999px;padding:7px 15px;font-size:14px;font-weight:600}
+.chip b{color:var(--amarillo)}
+.btn{display:inline-block;font-family:'Archivo';font-weight:800;text-decoration:none;border-radius:12px;padding:15px 26px;font-size:16.5px;letter-spacing:.3px;transition:.15s}
+.btn-wa{background:#22b358;color:#fff;box-shadow:0 8px 22px rgba(0,0,0,.3)}
+.btn-wa:hover{background:#1a9c4b}
+.btn-sign{background:var(--amarillo);color:var(--verde-osc)}
+.btn-sign:hover{background:#ffd95e}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:26px}
+section{padding:62px 0}
+.exit-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:28px}
+.exit-num{flex:0 0 auto;background:var(--verde);color:#fff;font-family:'Archivo';font-weight:900;border-radius:12px;padding:10px 14px;text-align:center;line-height:1.05;box-shadow:0 4px 0 var(--verde-osc)}
+.exit-num small{display:block;font-size:10px;letter-spacing:2px;color:var(--amarillo);font-weight:700}
+.exit-num b{font-size:24px}
+.exit-head h2{font-size:clamp(26px,3.6vw,38px);font-weight:900;text-transform:uppercase;line-height:1.1;color:var(--verde-osc)}
+.exit-head p{color:var(--gris);max-width:70ch;margin-top:6px}
+.alt{background:var(--papel);border-top:2px solid var(--linea);border-bottom:2px solid var(--linea)}
+.pasos{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:18px}
+.paso{background:#fff;border:2px solid var(--linea);border-radius:14px;padding:22px;position:relative}
+.paso::before{content:attr(data-n);position:absolute;top:-14px;left:16px;background:var(--amarillo);color:var(--verde-osc);font-family:'Archivo';font-weight:900;font-size:13px;padding:4px 12px;border-radius:999px;border:2px solid var(--verde-osc)}
+.paso h3{font-size:19px;font-weight:800;color:var(--verde-osc);margin:6px 0 8px}
+.paso p{font-size:15px;color:#33473b}
+.paso .oficial{margin-top:12px;background:var(--crema);border-left:5px solid var(--verde);padding:9px 12px;font-family:'IBM Plex Mono';font-size:13.5px}
+.paso .oficial b{color:var(--verde-osc)}
+table{width:100%;border-collapse:collapse;background:#fff;border:2px solid var(--linea);border-radius:12px;overflow:hidden;font-size:15px}
+th{background:var(--verde);color:#fff;font-family:'Archivo';text-align:left;padding:12px 14px;font-size:14px;letter-spacing:.4px}
+td{padding:11px 14px;border-top:1px solid var(--linea)}
+tr td:nth-child(2){font-family:'IBM Plex Mono';font-weight:600;color:var(--verde-osc);white-space:nowrap}
+.nota-tabla{font-size:13px;color:var(--gris);margin-top:10px}
+.ejemplo{background:#fff;border:2.5px dashed var(--verde);border-radius:14px;padding:26px;position:relative}
+.ejemplo .sello{position:absolute;top:-15px;right:20px;background:var(--rojo);color:#fff;font-family:'Archivo';font-weight:800;font-size:12.5px;letter-spacing:1.5px;padding:6px 14px;border-radius:8px;transform:rotate(2deg)}
+.check-list{list-style:none}
+.check-list li{padding:9px 0 9px 34px;position:relative;border-bottom:1px dashed var(--linea);font-size:15.5px}
+.check-list li:last-child{border-bottom:none}
+.check-list li::before{content:"✔";position:absolute;left:4px;top:9px;color:var(--verde-claro);font-weight:900}
+.check-list li .st{float:right;font-family:'IBM Plex Mono';font-size:12px;background:#e7f2ea;color:var(--verde-osc);padding:2px 9px;border-radius:999px}
+.comp{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.comp .card{border-radius:14px;padding:24px;border:2px solid var(--linea);background:#fff}
+.comp .card.ellos{background:#f1eee2}
+.comp .card.nosotros{background:var(--verde);color:#fff;border-color:var(--verde-osc)}
+.comp h3{font-size:18px;font-weight:800;margin-bottom:10px}
+.comp .precio{font-family:'Archivo';font-size:34px;font-weight:900}
+.comp ul{list-style:none;font-size:14.5px}
+.comp li{padding:5px 0 5px 22px;position:relative}
+.comp li::before{content:"—";position:absolute;left:2px;color:var(--amarillo-osc);font-weight:900}
+.comp .nosotros li::before{color:var(--amarillo)}
+.precios{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.precio-card{background:#fff;border:2px solid var(--linea);border-radius:16px;padding:26px 22px;text-align:center;position:relative}
+.precio-card.destacada{border:3px solid var(--verde);box-shadow:0 14px 34px rgba(10,77,46,.18)}
+.precio-card .tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--amarillo);border:2px solid var(--verde-osc);color:var(--verde-osc);font-family:'Archivo';font-weight:800;font-size:12px;padding:4px 14px;border-radius:999px;white-space:nowrap}
+.precio-card h3{font-size:17px;font-weight:800;color:var(--verde-osc);text-transform:uppercase;letter-spacing:.4px}
+.precio-card .monto{font-family:'Archivo';font-size:44px;font-weight:900;color:var(--verde);margin:8px 0 2px}
+.precio-card .monto small{font-size:16px;color:var(--gris);font-weight:600}
+.precio-card p{font-size:14px;color:var(--gris)}
+.precio-card ul{list-style:none;text-align:left;font-size:14px;margin-top:14px}
+.precio-card li{padding:5px 0 5px 24px;position:relative}
+.precio-card li::before{content:"✔";position:absolute;left:2px;color:var(--verde-claro);font-weight:900}
+.calc{background:var(--verde-osc);color:#fff;border-radius:18px;padding:30px}
+.calc h3{font-size:22px;font-weight:800;margin-bottom:6px}
+.calc p{color:#cfe6d6;font-size:15px;max-width:72ch}
+.calc-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;margin-top:20px}
+.calc label{display:flex;gap:10px;align-items:flex-start;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.18);border-radius:10px;padding:11px 13px;margin-bottom:9px;font-size:14.5px;cursor:pointer}
+.calc label input{margin-top:3px;width:17px;height:17px;accent-color:var(--amarillo)}
+.calc label .c{margin-left:auto;font-family:'IBM Plex Mono';font-size:13px;color:var(--amarillo);white-space:nowrap}
+.calc-out{background:#fff;color:var(--tinta);border-radius:12px;padding:20px}
+.calc-out .fila{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px dashed var(--linea);font-size:15px}
+.calc-out .fila.total{border-bottom:none;border-top:3px solid var(--verde);margin-top:8px;padding-top:12px;font-family:'Archivo';font-weight:800;font-size:19px;color:var(--verde-osc)}
+.calc-out small{color:var(--gris);font-size:12.5px;display:block;margin-top:10px}
+.legal{background:#fff;border:2px solid var(--linea);border-left:8px solid var(--rojo);border-radius:12px;padding:24px 26px}
+.legal h3{color:var(--rojo);font-size:19px;margin-bottom:8px}
+.legal p{font-size:15px;color:#3c4a41}
+details{background:#fff;border:2px solid var(--linea);border-radius:12px;padding:16px 20px;margin-bottom:12px}
+summary{font-family:'Archivo';font-weight:700;font-size:16.5px;cursor:pointer;color:var(--verde-osc)}
+details p{margin-top:9px;font-size:15px;color:#3c4a41}
+.form-card{background:#fff;border:2.5px solid var(--verde);border-radius:18px;padding:30px;box-shadow:0 16px 40px rgba(10,77,46,.14)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.form-grid .full{grid-column:1/-1}
+label.fl{display:block;font-family:'Archivo';font-weight:700;font-size:13.5px;letter-spacing:.3px;color:var(--verde-osc);margin-bottom:6px}
+input[type=text],input[type=tel],input[type=email],select,textarea{width:100%;border:2px solid var(--linea);border-radius:10px;padding:12px 13px;font-size:15.5px;font-family:'Inter';background:var(--papel)}
+textarea{min-height:96px;resize:vertical}
+button.submit{width:100%;background:var(--verde);color:#fff;border:none;font-family:'Archivo';font-weight:800;font-size:18px;padding:16px;border-radius:12px;cursor:pointer;margin-top:18px}
+button.submit:hover{background:var(--verde-claro)}
+footer{background:var(--verde-osc);color:#cfe6d6;padding:36px 0;font-size:13.5px}
+footer .wrap{display:grid;gap:10px}
+footer b{color:#fff}
+footer a{color:var(--amarillo);text-decoration:none}
+@media(max-width:820px){.hero .wrap,.comp,.calc-grid,.form-grid{grid-template-columns:1fr}.topbar .tel{margin-left:0;text-align:left}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="medallon"><span>OC</span></div>
+    <div class="marca">CONSULTORÍA OMAR CRUZ<small>NOTARÍA · BODAS · PAPELES — HYATTSVILLE, MD</small></div>
+    <div class="tel"><small>WhatsApp y llamadas</small><a href="https://wa.me/12406590154">240-659-0154</a></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div>
+      <span class="exit-tag"><b>EXPEDIENTE</b> OWNER-OPERATOR</span>
+      <h1>Deja de correr pa' otros.<br><span class="gold">Tu autoridad, en tu nombre.</span></h1>
+      <p class="lead">Armamos contigo el expediente completo pa' operar con tu propia autoridad: número DOT, autoridad MC, BOC-3, UCR, IFTA y placas IRP — paso a paso, en español, con <b>cada costo oficial separado</b> del precio del servicio. Sin sorpresas y sin letra pequeña.</p>
+      <div class="chips">
+        <span class="chip">Servicios en inglés cobran <b>$599–$1,997</b></span>
+        <span class="chip">Este expediente: <b>desde $199</b></span>
+        <span class="chip">En <b>español</b>, acompañado</span>
+      </div>
+      <div class="cta-row">
+        <a class="btn btn-wa" href="https://wa.me/12406590154?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20Expediente%20Owner-Operator">💬 Escríbeme por WhatsApp</a>
+        <a class="btn btn-sign" href="#precios">Ver precios ↓</a>
+      </div>
+    </div>
+    <figure class="foto">
+      <img src="foto-documentos.jpg" alt="Chofer revisando su carta de autoridad MC y su registro USDOT">
+      <figcaption>El expediente se arma papel por papel — así se ve el tuyo cuando queda listo.</figcaption>
+    </figure>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="exit-head">
+      <div class="exit-num"><small>EXIT</small><b>1</b></div>
+      <div>
+        <h2>El papeleo que te detiene</h2>
+        <p>Tienes el CDL, tienes el camión (o el plan de tenerlo) y las ganas. Lo que te separa de correr bajo tu nombre es una cadena de trámites en inglés, cada uno con su agencia, su tarifa y su fecha. Un papel mal radicado y la autoridad se duerme; una fecha que se pasa y el camión se para. Este servicio existe pa' que eso no te pase.</p>
+      </div>
+    </div>
+    <div class="pasos">
+      <div class="paso" data-n="EL ORDEN IMPORTA">
+        <h3>Cada trámite tiene su momento</h3>
+        <p>La empresa va antes que los números, el seguro antes que la activación, el 2290 sellado antes que las placas. Hacerlo fuera de orden cuesta semanas y a veces otro pago.</p>
+      </div>
+      <div class="paso" data-n="LOS SITIOS FALSOS">
+        <h3>El USDOT es gratis — solo en el sitio oficial</h3>
+        <p>Internet está lleno de páginas que imitan a la FMCSA y cobran por trámites gratuitos o que cuestan $300. Aquí sabes exactamente qué es oficial, qué cuesta y a quién se le paga.</p>
+      </div>
+      <div class="paso" data-n="EL CALENDARIO">
+        <h3>6 vencimientos que no perdonan</h3>
+        <p>IFTA trimestral, 2290 anual, UCR anual, MCS-150 cada 2 años, placas IRP y renovación del seguro. El expediente incluye tu calendario completo de renovaciones.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt">
+  <div class="wrap">
+    <div class="exit-head">
+      <div class="exit-num"><small>EXIT</small><b>2</b></div>
+      <div>
+        <h2>Tu expediente, paso a paso</h2>
+        <p>Esto es lo que armamos contigo, en este orden. En cada paso ves el <b>costo oficial</b> tal cual lo cobran las agencias — ese dinero lo pagas tú directo a la agencia; nuestro precio es solo por el acompañamiento y la preparación del expediente.</p>
+      </div>
+    </div>
+    <div class="pasos">
+      <div class="paso" data-n="PASO 1">
+        <h3>Tu empresa: LLC + EIN</h3>
+        <p>Registramos la estructura: la empresa a cuyo nombre va a vivir la autoridad, con su EIN del IRS y la cuenta de negocio separada.</p>
+        <div class="oficial">Costo oficial: LLC según tu estado <b>($50–$500)</b> · EIN <b>$0 — gratis</b> en el IRS</div>
+      </div>
+      <div class="paso" data-n="PASO 2">
+        <h3>Número USDOT</h3>
+        <p>Tu registro federal de seguridad en el sistema Motus de la FMCSA, con el nombre legal idéntico al de tu empresa en cada documento.</p>
+        <div class="oficial">Costo oficial: <b>$0 — gratis</b> (FMCSA / Motus)</div>
+      </div>
+      <div class="paso" data-n="PASO 3">
+        <h3>Autoridad MC</h3>
+        <p>La solicitud de tu operating authority pa' transportar carga de terceros cruzando estados, llenada con calma y revisada dos veces (no es reembolsable).</p>
+        <div class="oficial">Costo oficial: <b>$300</b> una vez (FMCSA) · activación ~21 días</div>
+      </div>
+      <div class="paso" data-n="PASO 4">
+        <h3>BOC-3 + seguro radicado</h3>
+        <p>Coordinamos las dos radicaciones que activan tu autoridad: el BOC-3 de tu agente de proceso y el BMC-91 que radica tu aseguradora.</p>
+        <div class="oficial">Costo oficial: BOC-3 <b>$25–$75</b> una vez · el seguro lo cotizas tú con tu agente (depósito típico $2,500–$7,000)</div>
+      </div>
+      <div class="paso" data-n="PASO 5">
+        <h3>UCR + forma 2290</h3>
+        <p>El registro unificado anual y el impuesto federal del camión pesado, con su copia sellada (Schedule 1) lista pa' las placas.</p>
+        <div class="oficial">Costo oficial: UCR <b>$46 (2026)</b> pa' 0–2 camiones · 2290 <b>$100–$550</b> según peso (IRS)</div>
+      </div>
+      <div class="paso" data-n="PASO 6">
+        <h3>Placas IRP + licencia IFTA</h3>
+        <p>Tus placas apportioned en tu estado base y tu licencia de combustible con sus calcomanías, más el calendario de los 4 reportes IFTA del año.</p>
+        <div class="oficial">Costo oficial: IRP <b>~$1,500–$3,500</b> según estado y peso · IFTA <b>$0–$15</b> aprox.</div>
+      </div>
+    </div>
+    <p class="nota-tabla">Tarifas oficiales verificadas en noviembre de 2026 (FMCSA, IRS, UCR y guías del mercado). Las tarifas cambian: el monto vigente se confirma contigo antes de radicar cada trámite. El seguro y las placas los pagas a tu aseguradora y a tu estado — nunca pasan por nuestras manos como «parte del paquete».</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="exit-head">
+      <div class="exit-num"><small>EXIT</small><b>3</b></div>
+      <div>
+        <h2>Así se ve tu expediente cuando queda listo</h2>
+        <p>Esto es un ejemplo ilustrativo con datos ficticios de cómo se entrega el expediente organizado: cada documento radicado, cada fecha anotada y tu calendario de renovaciones armado.</p>
+      </div>
+    </div>
+    <div class="ejemplo">
+      <span class="sello">EJEMPLO ILUSTRATIVO</span>
+      <h3 class="sign" style="color:var(--verde-osc);margin-bottom:12px">EXPEDIENTE — TRANSPORTES EJEMPLO LLC (datos ficticios)</h3>
+      <ul class="check-list">
+        <li>LLC registrada + EIN asignado + cuenta de negocio abierta <span class="st">COMPLETO</span></li>
+        <li>USDOT activo a nombre de la empresa <span class="st">COMPLETO</span></li>
+        <li>Autoridad MC radicada — periodo de protesta en curso (día 12 de ~21) <span class="st">EN PROCESO</span></li>
+        <li>BOC-3 radicado por agente de proceso nacional <span class="st">COMPLETO</span></li>
+        <li>Seguro cotizado y aceptado — BMC-91 se radica al cerrar el periodo <span class="st">EN PROCESO</span></li>
+        <li>UCR 2026 pagado · 2290 radicado con Schedule 1 sellado <span class="st">COMPLETO</span></li>
+        <li>Cuenta IRP abierta · licencia IFTA y calcomanías recibidas <span class="st">COMPLETO</span></li>
+        <li>Calendario de renovaciones entregado (IFTA ×4 · 2290 · UCR · MCS-150 · IRP · seguro) <span class="st">ENTREGADO</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="alt" id="precios">
+  <div class="wrap">
+    <div class="exit-head">
+      <div class="exit-num"><small>EXIT</small><b>4</b></div>
+      <div>
+        <h2>Lo que cobra el mercado vs. lo que pagas aquí</h2>
+        <p>Los servicios de «trucking permits» en inglés venden este mismo expediente en paquetes. Compara tú mismo — precios públicos verificados en noviembre de 2026.</p>
+      </div>
+    </div>
+    <div class="comp">
+      <div class="card ellos">
+        <h3>SERVICIOS EN INGLÉS (mercado)</h3>
+        <div class="precio">$599 – $1,997</div>
+        <ul>
+          <li>Paquetes de authority: $599 / $650 / $950 / $999 / $1,295 / $1,650 / $1,997 según el servicio</li>
+          <li>Atención y formularios en inglés</li>
+          <li>Las tarifas oficiales van «por encima» y a veces ni se desglosan</li>
+          <li>Cumplimiento mensual aparte: hasta $79/mes en algunos servicios</li>
+        </ul>
+      </div>
+      <div class="card nosotros">
+        <h3>EXPEDIENTE OWNER-OPERATOR — AQUÍ</h3>
+        <div class="precio" style="color:var(--amarillo)">$199 – $399</div>
+        <ul>
+          <li>El mismo expediente, explicado y acompañado en español</li>
+          <li>Cada costo oficial desglosado ANTES de empezar (Salida 2)</li>
+          <li>Tu calendario de renovaciones incluido en el expediente</li>
+          <li>Cuidado Anual de renovaciones: $99/año (no $79/mes)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div style="height:30px"></div>
+    <div class="precios">
+      <div class="precio-card">
+        <h3>Con el curso</h3>
+        <div class="monto">$199</div>
+        <p>Precio especial si ya compraste el curso <b>Owner-Operator en Español</b> (se verifica la compra).</p>
+        <ul>
+          <li>Expediente completo, pasos 1–6</li>
+          <li>Costos oficiales desglosados</li>
+          <li>Calendario de renovaciones</li>
+        </ul>
+      </div>
+      <div class="precio-card destacada">
+        <span class="tag">EL COMPLETO</span>
+        <h3>Expediente Owner-Operator</h3>
+        <div class="monto">$299</div>
+        <p>Acompañamiento completo hasta que tu autoridad quede <b>activa</b>.</p>
+        <ul>
+          <li>Los 6 pasos del expediente, contigo</li>
+          <li>Coordinación de BOC-3 y del seguro</li>
+          <li>Archivo de chofer (DQ file) orientado</li>
+          <li>Calendario + recordatorio de tu 1.ª fecha</li>
+        </ul>
+      </div>
+      <div class="precio-card">
+        <h3>Con LLC + EIN</h3>
+        <div class="monto">$399</div>
+        <p>El expediente completo <b>con la formación de tu LLC y el EIN</b> incluidos en el servicio.</p>
+        <ul>
+          <li>Todo lo del paquete completo</li>
+          <li>LLC formada y EIN gestionado</li>
+          <li>La tarifa oficial del estado la pagas tú directo al estado</li>
+        </ul>
+      </div>
+      <div class="precio-card">
+        <h3>Cuidado Anual</h3>
+        <div class="monto">$99<small>/año</small></div>
+        <p>Pa' que ninguna renovación te coja en ruta, año tras año.</p>
+        <ul>
+          <li>Alertas de UCR, 2290, IFTA, IRP y seguro</li>
+          <li>Actualización MCS-150 cuando toque</li>
+          <li>Revisión anual de tu expediente</li>
+        </ul>
+      </div>
+    </div>
+    <p class="nota-tabla" style="text-align:center;margin-top:16px">Los precios de esta página son por el <b>servicio de acompañamiento y preparación del expediente</b>. Las tarifas oficiales de la Salida 2 las paga siempre el cliente, directo a cada agencia.</p>
+
+    <div style="height:34px"></div>
+    <div class="calc">
+      <h3>🧮 Calcula el costo real de tu arranque</h3>
+      <p>Marca lo que necesitas y mira el total honesto: tarifas oficiales (rangos) + el servicio. El seguro y el camión van por tu cuenta, con tu agente y tu estado.</p>
+      <div class="calc-grid">
+        <div id="calc-items">
+          <label><input type="checkbox" data-min="300" data-max="300" checked> Autoridad MC (FMCSA) <span class="c">$300</span></label>
+          <label><input type="checkbox" data-min="0" data-max="0" checked> Número USDOT + EIN <span class="c">GRATIS</span></label>
+          <label><input type="checkbox" data-min="25" data-max="75" checked> BOC-3 (agente de proceso) <span class="c">$25–$75</span></label>
+          <label><input type="checkbox" data-min="46" data-max="46" checked> UCR anual (0–2 camiones) <span class="c">$46</span></label>
+          <label><input type="checkbox" data-min="100" data-max="550"> Forma 2290 según tu peso <span class="c">$100–$550</span></label>
+          <label><input type="checkbox" data-min="1500" data-max="3500"> Placas IRP (primer año, estimado) <span class="c">$1,500–$3,500</span></label>
+          <label><input type="checkbox" data-min="50" data-max="500"> Formación de LLC (a tu estado) <span class="c">$50–$500</span></label>
+          <label><input type="checkbox" data-min="299" data-max="299" data-svc="1" checked> Servicio Expediente Owner-Operator <span class="c">$299</span></label>
+        </div>
+        <div class="calc-out">
+          <div class="fila"><span>Tarifas oficiales (rango)</span><b id="calc-oficial">$371 – $421</b></div>
+          <div class="fila"><span>Servicio de acompañamiento</span><b id="calc-servicio">$299</b></div>
+          <div class="fila total"><span>TOTAL estimado</span><span id="calc-total">$670 – $720</span></div>
+          <small>No incluye el seguro (depósito típico $2,500–$7,000 con tu agente) ni el camión. Rangos de planificación verificados en nov-2026; el monto oficial vigente se confirma antes de radicar.</small>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="exit-head">
+      <div class="exit-num"><small>EXIT</small><b>5</b></div>
+      <div>
+        <h2>La línea clara, sin letra pequeña</h2>
+        <p>Qué hacemos y qué no hacemos — dicho de frente, como en todos los servicios de esta Consultoría.</p>
+      </div>
+    </div>
+    <div class="legal">
+      <h3>Lo que este servicio ES y lo que NO es</h3>
+      <p>Este es un servicio de <b>asistencia con papeles y logística</b>: preparamos y organizamos tu expediente contigo, te acompañamos paso a paso y coordinamos las radicaciones. <b>No es asesoría legal</b>: Omar Cruz no es abogado ni representante acreditado, y este servicio no sustituye el consejo de un abogado, un contador o un agente de seguros licenciado. <b>No tenemos afiliación</b> con la FMCSA, el USDOT, el IRS ni ninguna agencia estatal: las tarifas oficiales las pagas tú directo a cada agencia. No garantizamos la aprobación de ninguna solicitud — la decisión es siempre de la agencia — ni prometemos ingresos, cargas ni tiempos exactos de activación (la FMCSA toma ~21 días en el periodo de protesta). El seguro lo contratas tú con tu agente; nosotros coordinamos la radicación del BMC-91, no vendemos seguros.</p>
+    </div>
+    <div style="height:26px"></div>
+    <details>
+      <summary>¿Necesito tener ya el camión pa' empezar el expediente?</summary>
+      <p>No. Puedes armar la empresa, el USDOT y la solicitud del MC mientras cierras la compra del camión. El seguro y las placas sí necesitan el camión identificado (VIN), por eso el expediente se ordena en los 6 pasos de la Salida 2.</p>
+    </details>
+    <details>
+      <summary>¿Cuánto tarda mi autoridad en quedar activa?</summary>
+      <p>La FMCSA tiene un periodo de protesta de aproximadamente 21 días desde la solicitud del MC. La autoridad se activa cuando ese periodo cierra Y están radicados el seguro (BMC-91) y el BOC-3. Por eso coordinamos esas dos radicaciones durante la espera, no después.</p>
+    </details>
+    <details>
+      <summary>¿Por qué el USDOT me sale «gratis» aquí y otros sitios cobran?</summary>
+      <p>Porque el USDOT es gratis en el sitio oficial de la FMCSA (Motus). Hay páginas que imitan al gobierno y cobran por gestionarlo. En este servicio cada costo oficial va desglosado antes de empezar: lo que es gratis, se te dice que es gratis.</p>
+    </details>
+    <details>
+      <summary>¿El precio del servicio incluye las tarifas del gobierno?</summary>
+      <p>No, y es a propósito: las tarifas oficiales (MC $300, UCR $46, 2290, placas de tu estado) las pagas tú directo a cada agencia, con tu tarjeta y tu recibo a tu nombre. Nuestro precio es solo el acompañamiento y la preparación del expediente.</p>
+    </details>
+    <details>
+      <summary>¿Y si ya tengo el curso Owner-Operator en Español?</summary>
+      <p>Tu expediente baja a $199 (se verifica la compra del curso). El curso te enseña el mapa completo; este servicio camina el mapa contigo hasta la autoridad activa.</p>
+    </details>
+    <details>
+      <summary>¿Trabajan con choferes fuera de Maryland?</summary>
+      <p>Sí: la autoridad federal (USDOT/MC) es nacional. Las piezas de tu estado base (LLC, IRP, IFTA) se coordinan según tu estado, con sus tarifas oficiales propias. Todo el acompañamiento es remoto, en español.</p>
+    </details>
+  </div>
+</section>
+
+<section class="alt" id="solicitud">
+  <div class="wrap">
+    <div class="exit-head">
+      <div class="exit-num"><small>EXIT</small><b>6</b></div>
+      <div>
+        <h2>Pide tu expediente</h2>
+        <p>Déjanos tus datos y te contactamos pa' confirmar tu punto de arranque (qué tienes y qué te falta) antes de cobrar un centavo.</p>
+      </div>
+    </div>
+    <div class="form-card">
+      <form action="https://formsubmit.co/leydelswing@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nueva solicitud — Expediente Owner-Operator">
+        <input type="hidden" name="_cc" value="swingbravo@gmail.com">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="false">
+        <div class="form-grid">
+          <div><label class="fl" for="f-nombre">Nombre completo *</label><input type="text" id="f-nombre" name="Nombre" required></div>
+          <div><label class="fl" for="f-tel">Teléfono / WhatsApp *</label><input type="tel" id="f-tel" name="Teléfono" required></div>
+          <div><label class="fl" for="f-email">Correo electrónico</label><input type="email" id="f-email" name="Correo"></div>
+          <div><label class="fl" for="f-estado">Estado base (donde vives / registrarás el camión)</label><input type="text" id="f-estado" name="Estado base"></div>
+          <div><label class="fl" for="f-camion">¿Ya tienes el camión?</label>
+            <select id="f-camion" name="¿Ya tiene el camión?">
+              <option>Sí, ya es mío</option><option>Estoy comprándolo</option><option>Todavía no — quiero el plan primero</option>
+            </select></div>
+          <div><label class="fl" for="f-situacion">¿Dónde estás parado hoy?</label>
+            <select id="f-situacion" name="Situación actual">
+              <option>Corro lease-on con el MC de otro</option><option>Soy chofer de compañía</option><option>Ya tengo USDOT pero no MC</option><option>Ya tengo MC — necesito completar (UCR/IRP/IFTA)</option><option>Otro</option>
+            </select></div>
+          <div><label class="fl" for="f-curso">¿Ya compraste el curso Owner-Operator en Español? (tu expediente baja a $199)</label>
+            <select id="f-curso" name="¿Ya compró el curso?">
+              <option>No</option><option>Sí — quiero mi precio de $199</option><option>Quiero el curso también</option>
+            </select></div>
+          <div><label class="fl" for="f-paquete">Paquete de interés</label>
+            <select id="f-paquete" name="Paquete de interés">
+              <option>Expediente completo — $299</option><option>Con el curso — $199</option><option>Con LLC + EIN — $399</option><option>Solo quiero orientación primero</option>
+            </select></div>
+          <div class="full"><label class="fl" for="f-msg">Cuéntanos tu caso (tipo de camión, carga que quieres mover, dudas)</label><textarea id="f-msg" name="Mensaje"></textarea></div>
+        </div>
+        <button class="submit" type="submit">ENVIAR MI SOLICITUD →</button>
+        <p style="font-size:13px;color:var(--gris);margin-top:12px;text-align:center">¿Prefieres hablar primero? WhatsApp <a href="https://wa.me/12406590154" style="color:var(--verde);font-weight:700">240-659-0154</a> — Consultoría Omar Cruz, Hyattsville, MD.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div><b>CONSULTORÍA OMAR CRUZ</b> — Notaría · Bodas · Papeles · Hyattsville, Maryland · WhatsApp <a href="https://wa.me/12406590154">240-659-0154</a></div>
+    <div>Servicio de asistencia con papeles y logística. Omar Cruz no es abogado ni representante acreditado; esto no es asesoría legal. Sin afiliación con FMCSA, USDOT, IRS ni agencias estatales. Las tarifas oficiales las paga el cliente directo a cada agencia y pueden cambiar sin aviso; el monto vigente se confirma antes de radicar.</div>
+    <div>Familia de servicios: Expediente Listo (Doble Ciudadanía) · Papeles Listos MHIC · Expediente Agencia de Dispatch · Negocio en Regla · Apostillas MD — Academia del Profe Omar: cursos Owner-Operator en Español y Truck Dispatcher Pro.</div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var boxes=document.querySelectorAll('#calc-items input[type=checkbox]');
+  function fmt(n){return '$'+n.toLocaleString('en-US');}
+  function calc(){
+    var omin=0,omax=0,svc=0;
+    boxes.forEach(function(b){ if(!b.checked) return;
+      var mn=+b.dataset.min, mx=+b.dataset.max;
+      if(b.dataset.svc){ svc+=mn; } else { omin+=mn; omax+=mx; } });
+    document.getElementById('calc-oficial').textContent=fmt(omin)+' – '+fmt(omax);
+    document.getElementById('calc-servicio').textContent=fmt(svc);
+    document.getElementById('calc-total').textContent=fmt(omin+svc)+' – '+fmt(omax+svc);
+  }
+  boxes.forEach(function(b){ b.addEventListener('change',calc); });
+  calc();
+})();
+</script>
+</body>
+</html>
